@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>로그인하세요.</legend>
+            <ul>
+                <li>
+                    <label for="id">이메일</label>
+                    <input type="email" id="id" required autofocus placeholder="xxxxx@gmail.com">
+                </li>
+                <li>
+                    <label for="password">비밀번호</label>
+                    <input type="password" id="password" required>
+                </li>
+                <li>
+                    <label for="tel">전화번호</label>
+                    <input type="tel" id="tel" required placeholder="010-xxxx-xxxx">
+                </li>
+        </fieldset>
+        <fieldset>
+            <legend>당신은 권종원을 좋아하나요?</legend>
+            <ul>
+                <li>
+                    <label for="yes">당연하죠</label>
+                    <input type="radio" id="Yes" name="cozy" value="yes">
+                    <label for="no">아니요</label>
+                    <input type="radio" id="No" name="cozy" value="no">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>얼만큼 좋아하나요?</legend>
+                <label for="much">좋아하는만큼</label>
+                <input type="range" id="much" min="99" max="100" required>
+        </fieldset>
+        <fieldset>
+            <legend>어떤 모습이 좋으신지 모두 체크하세요.</legend>
+            <ul>
+                <li>
+                    <label for="handsome">잘생겼다</label>
+                    <input type="checkbox" id="handsome" value="handsome">
+                </li>
+                <li>
+                    <label for="sexy">섹시하다</label>
+                    <input type="checkbox" id="sexy" value="sexy">
+                </li>
+                <li>
+                    <label for="kind">착하다</label>
+                    <input type="checkbox" id="kind" value="kind">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>권종원의 태어난 날과 시간을 맞춰보시오.</legend>
+                <label for="time"></label>
+                <input type="datetime-local" id="time" required>
+        </fieldset>
+        <fieldset>
+            <legend>권종원이 한 운동은?</legend>
+            <ul>
+                <li>
+                    <select name="sports" id="sports" required>
+                        <option value="baseball">야구</option>
+                        <option value="soccer">축구</option>
+                        <option value="basketball">농구</option>
+                        <option value="tennis">테니스</option>
+                        <option value="golf">골프</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>권종원이 가장 멋있다고 생각한 때는?</legend>
+            <ul>
+                <li>
+                    <label for="cool-man">자유롭게 의견</label>
+                    <input list="cool" name="cool-man" id="cool-man" required>
+                    <datalist id="cool">
+                        <option value="now">지금</option>
+                        <option value="now">방금</option>
+                        <option value="right-now">완전지금</option>
+                        <option value="everyday">매일</option>
+                        <option value="now">현재</option>
+                    </datalist>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>권종원에게 한마디</legend>
+            <textarea name="chance" id="chance" rows="10" cols="100" required></textarea>
+        </fieldset>
+        <button type="submit">완료</button>
+    </form>
+</body>
+</html>
